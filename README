@@ -1,0 +1,7 @@
+Python script to love spotify's current playing track on Last.fm. 
+It also show's notification with current artist,track name and users playcount after success.
+
+Requirements
+
+1) Uses pytify to get current playing track metadata.
+2) Uses python gntp to add support for growl notifications.
