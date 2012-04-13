@@ -4,7 +4,9 @@ It also show's notification with current artist,track name and users playcount a
 Requirements
 
 1) Uses pytify to get current playing track metadata.
-2) Uses python gntp to add support for growl notifications.
+2) Uses pywin32
+3) Uses python gntp to add support for growl notifications.
+4) Uses pylast to interact with last.fm
 
 
 Exception Handling is STILL missing.
