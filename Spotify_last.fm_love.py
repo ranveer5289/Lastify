@@ -47,8 +47,8 @@ print playcount
 last_loved_track = str(loved_track_list[0][0])
 
 #Get last loved artist,track name
-artist,track = last_loved_track.split(' - ')
-print track.lower()
+artist_loved,track_loved = last_loved_track.split(' - ')
+print track_loved.lower()
 
 
 
@@ -58,9 +58,9 @@ notification = Notification.Notification()
 #Check if track loved previously or not than
 #send notification.
 
-if track_name.lower() == track.lower():
+if track_name.lower() == track_loved.lower():
 
-        notification.send_Notification(track,artist,playcount,1)
+        notification.send_Notification(track_loved,artist_loved,playcount,1)
 else:
 
-        notification.send_Notification(track,artist,playcount,0)
+        notification.send_Notification(track_name,artist_name,playcount,0)
