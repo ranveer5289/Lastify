@@ -29,7 +29,7 @@ class Notification():
                 if code == 1:
                         descp = "Title: {0} \n\n PlayCount: {1}".format(track,playcount)
                 elif code == 0:
-                        descp = "track already loved on last.fm"
+                        descp = "track already loved on last.fm \n\n PlayCount: {0}".format(playcount)
 
                 #Sending notification to growl.        
                 self.growl.notify(
