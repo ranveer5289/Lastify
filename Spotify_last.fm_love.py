@@ -1,10 +1,19 @@
 from pytify import Spotify
+import sys
 import subprocess
 import pylast
 import Notification
+import checkgrowlrunning
 
 #Go to http://www.last.fm/api/account and get the below mentioned fields to
 #authenticate yourself.
+
+cgrowl = checkgrowlrunning.checkgrowl()
+status =  cgrowl.checkrunning()
+if status is False:
+        sys.exit(0)
+
+
 
 API_KEY = 'ccd0f44abca06820ffd452952d488177'
 API_SECRET = '8ea68dc5ec3585ea50565e53682a98e0'
