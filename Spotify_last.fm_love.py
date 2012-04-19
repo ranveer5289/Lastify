@@ -3,12 +3,12 @@ import sys
 import subprocess
 import pylast
 import Notification
-import checkgrowlrunning
+import CheckGrowlRunning
 
 #Go to http://www.last.fm/api/account and get the below mentioned fields to
 #authenticate yourself.
 
-cgrowl = checkgrowlrunning.checkgrowl()
+cgrowl = CheckGrowlRunning.checkgrowl()
 status =  cgrowl.checkrunning()
 if status is False:
         sys.exit(0)
